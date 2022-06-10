@@ -1,0 +1,30 @@
+---
+layout: raw
+---
+<style>
+  table {
+    border: 1px solid black;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 0.1rem;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Page</th>
+      <th>Target</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for p in site.pages %}
+  {% if p.layout == "default" %}
+    <tr>
+      <th><a href="{{ p.url }}">{{ p.url }}</a></th>
+      <th><a href="{{ p.target }}">{{ p.target }}</a></th>
+    </tr>
+  {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
