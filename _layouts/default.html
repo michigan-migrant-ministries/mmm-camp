@@ -1,0 +1,15 @@
+{% if page.target %}{% assign target = page.target %}{% else %}{% assign target = "https://www.michiganmigrantministries.com/" %}{% endif %}<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url={{ target }}">
+        <script type="text/javascript">
+            window.location.href = "{{ target }}";
+        </script>
+        <link rel="canonical" href="{{ target }}"/>
+        <title>Redirecting to {{ target }}</title>
+    </head>
+    <body>
+      Redirecting you to <a href="{{ target }}">{{ target }}</a>...
+    </body>
+</html>

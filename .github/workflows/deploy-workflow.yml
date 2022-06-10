@@ -1,0 +1,45 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: deploy
+    runs-on: ubuntu-latest
+    container:
+      image: jekyll/jekyll:4
+    steps:
+      - name: Checkout ungenerated site
+        uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - name: Checkout generated site to '_site' directory
+        uses: actions/checkout@v3
+        with:
+          ref: 'gh-pages'
+          path: '_site'
+      - name: Install dependencies
+        run: |
+          bundle install
+      - name: Build website
+        run: |
+          mkdir .jekyll-cache
+          jekyll build
+      - name: Publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE/_site"
+          cd _site
+          touch .nojekyll
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add -A
+          git status
+          git commit -m "Github Actions"
+          git push
