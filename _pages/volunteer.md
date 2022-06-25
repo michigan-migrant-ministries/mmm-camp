@@ -1,3 +1,3 @@
 ---
-target: https://www.michiganmigrantministries.com/ways-to-be-involved
+target: https://michiganmigrantministries.com/volunteer-sign-up
 ---
