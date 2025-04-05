@@ -25,7 +25,7 @@ Here are some useful documentation links:
 
 ## Deploying changes
 
-Github automatically deployes changes to the `main` branch according to this file:
+Github automatically deploys changes to the `main` branch according to this file:
 ```
 .github/workflows/deploy-workflow.yml
 ```
