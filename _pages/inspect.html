@@ -2,6 +2,9 @@
 layout: raw
 ---
 <style>
+  img {
+    height: 1in;
+  }
   table {
     border: 1px solid black;
   }
@@ -14,15 +17,17 @@ layout: raw
   <thead>
     <tr>
       <th>Page</th>
+      <th>QR code</th>
       <th>Target</th>
     </tr>
   </thead>
   <tbody>
   {% for p in site.pages %}
-  {% if p.layout == "default" %}
+  {% if p.target %}
     <tr>
-      <th><a href="{{ p.url }}">{{ p.url }}</a></th>
-      <th><a href="{{ p.target }}">{{ p.target }}</a></th>
+      <td><a href="{{ p.url }}">{{ p.url }}</a></td>
+      <td><a href="{{ p.url }}.png"><img src="{{ p.url }}.png"></a></td>
+      <td><a href="{{ p.target }}">{{ p.target }}</a></td>
     </tr>
   {% endif %}
   {% endfor %}
