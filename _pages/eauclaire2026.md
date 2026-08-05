@@ -1,3 +1,18 @@
 ---
-target: https://docs.google.com/forms/d/e/1FAIpQLSc7R-87H65c6wdp4kprMoPw3k1ieOm1al5BjKmsv39otVrrmQ/viewform?usp=publish-editor
+layout: raw
 ---
+<h1>Eau Claire / Sodus, 2026</h1>
+<h2>Songs</h2>
+<p>
+<a href="https://music.youtube.com/watch?v=kjs8-2HRpR8&si=PNu0_w62OAd9wGZj">So Much More</a> (John 21:25)
+</p>
+<h2>Videos</h2>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6b0li_cNFk4?si=AhuS-PDZI6n-srE2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cGFC3upVJCw?si=GyytxUDJArLYehdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-CpPxmSAjdA?si=EhL-RYd6UToNRmva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
